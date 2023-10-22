@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  --primary-color: rgb(248, 229, 62);
+  --secondary-color: rgb(59, 112, 114);
+  --tertiary-color: rgb(69, 143, 139);
+  --blend-color: whitesmoke;
+}
+
+
+body {
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.img-container img {
+  position: absolute;
+  top: 2%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  margin-top: -1px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 5px solid var(--secondary-color);
+  object-position: center;
+  margin-top: 0px;
+  animation: shake 20s cubic-bezier(.36, .07, .19, .97) both infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  display: block;
+}
+
+img  {
+  margin-top: 20px;
+}
+
+.main {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  text-align: center;
+}
+
+.containers {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 10%;
+  right: 0;
+  margin: auto;
+  border: 1px solid var(--blend-color);
+  width: 1024px;
+  height: 150vh;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(7, 0, 0, 0.5);
+}
+
+.socials {
+  width: 20rem;
+  height: 3rem;
+  color: var(--primary-color);
+  background: black;
+  border: 1px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.socials:hover {
+  background: transparent;
+  color: black;
+  transition: .3s step-start(8, start);
+}
+
+h3 {
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  margin-top: 3px !important;
+}
+
+
+h3:hover {
+  display: block;
+}
+
+.row {
+  margin-bottom: 50px !important;
+}
+
+
+.social-container {
+  position: relative;
+  top: 40%;
+  left: 35%;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.buttons {
+  position: relative;
+  top: 45%;
+  left: 5%;
+}
+
+
+.nav-btn {
+  padding: 20px 9rem;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-weight: 700;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: black;
+  color: white;
+}
+
+.contact {
+  margin-left: 18rem;
+}
+
+footer {
+  position: absolute;
+  top: 83%;
+  left: 40%;
+  text-align: center;
+}
+
+.socials-1 {
+  margin-bottom: 70px;
+}
+
+footer p {
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 0% auto; /* 15% from the top and centered */
+  border-radius: 10px;
+  border: 1px solid #888;
+  overflow: auto;
+  height: 100vh;
+  padding: 10px 20px;
+}
+
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 2%;
+  left: 95%;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  width: 50px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* The Close Button */
+.closes {
+  position: absolute;
+  top: 2%;
+  left: 95%;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  width: 50px;
+}
+
+.closes:hover,
+.closes:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* The Close Button */
+.closed {
+  position: absolute;
+  top: 2%;
+  left: 95%;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  width: 50px;
+}
+
+.closed:hover,
+.closed:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* The Close Button */
+.closing {
+  position: absolute;
+  top: 2%;
+  left: 95%;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  width: 50px;
+}
+
+.closing:hover,
+.closing:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.head {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-bottom: 3px solid #9c9c9c;
+  width: 50pt;
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+}
+
+
+
+
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+  .containers {
+    width: 700px;
+    margin-top: 10px;
+    height: 110vh;
+  }
+
+  .main {
+    top: 20%;
+    margin-left: -30px;
+  }
+
+  .social-container {
+    top: 30%;
+    left: 27%;
+  }
+
+  .buttons {
+    position: relative;
+    top: 35%;
+    left: 25%;
+  }
+
+  .nav-btn {
+    padding: 30px 15rem;
+    margin-left: -100px;
+  }
+
+  .row {
+    margin-bottom: 0px !important;
+  }
+
+  footer {
+    top: 85%;
+    left: 33%;
+  }
+
+  .close, .closed, .closing, .closes {
+    top: 2%;
+    left: 90%;
+  }
+
+  
+  
+}
+
+@media screen and (max-width: 767px) {
+
+  .containers {
+    width: 370px;
+    padding: 10px;
+    height: 115vh;
+  }
+
+  .main {
+    top: 25%;
+    left: 26%;
+  }
+
+  .row {
+    margin-bottom: 0px !important;
+  }
+
+  .social-container {
+    top: 37%;
+    left: 4%;
+  }
+
+  .nav-btn {
+    padding: 15px 7rem;
+    margin-left: -1px;
+  }
+
+  .buttons {
+    position: relative;
+    top: 42%;
+    left: 10%;
+  }
+
+  .nav-btns {
+    padding: 15px 7rem;
+    margin-bottom: 50px;
+  }
+
+  .socials-1 {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    top: 89%;
+    left: 20%;
+  }
+
+  .close, .closed, .closing, .closes {
+    top: 1%;
+    left: 90%;
+  }
+
+
+
+  
+}
