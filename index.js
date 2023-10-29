@@ -2,7 +2,6 @@ var aboutModal = document.getElementById("about-modal");
 var skillModal = document.getElementById("skill-modal");
 var projectModal = document.getElementById("project-modal");
 var contactModal = document.getElementById("contact-modal");
-var body = document.getElementsByTagName(body);
 
 const aboutBtn = document.getElementById("about-btn");
 const skillBtn = document.getElementById("skill-btn");
@@ -19,7 +18,6 @@ var spaning = document.getElementsByClassName("closing")[0];
 
 aboutBtn.onclick = function() {
     aboutModal.style.display = "block";
-    body.style.overflow = "hidden";
   }
   
   // When the user clicks on <span> (x), close the modal
