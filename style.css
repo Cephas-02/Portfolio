@@ -59,7 +59,7 @@ img  {
 
 .main {
   position: absolute;
-  top: 25%;
+  top: 27%;
   left: 40%;
   text-align: center;
 }
@@ -121,8 +121,8 @@ h3:hover {
 
 .social-container {
   position: relative;
-  top: 40%;
-  left: 35%;
+  top: 43%;
+  left: 43%;
   bottom: 0;
   right: 0;
   margin: auto;
@@ -131,25 +131,9 @@ h3:hover {
 .buttons {
   position: relative;
   top: 45%;
-  left: 5%;
+  padding: 50px;
 }
 
-
-.nav-btn {
-  padding: 20px 9rem;
-  margin-bottom: 50px;
-  border: 1px solid black;
-  border-radius: 5px;
-  color: black;
-  font-weight: 700;
-  background: transparent;
-  cursor: pointer;
-}
-
-.nav-btn:hover {
-  background: black;
-  color: white;
-}
 
 .contact {
   margin-left: 18rem;
@@ -320,28 +304,10 @@ footer p {
 }
 
 .form-action {
-  display: flex;
-  flex-direction: column;
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
-.form-label {
-  margin-bottom: 10px !important;
-  font-weight: 600;
-}
-
-.form-input {
-  margin-bottom: 25px;
-  padding: 5px 10px;
-  outline: none;
-}
-
-textarea {
-  resize: none !important;
-  outline: none;
-  padding: 5px 10px;
-}
 
 
 
@@ -355,26 +321,7 @@ textarea {
 }
 
 
-.project-img {
-  object-fit: cover;
-  object-position: center;
-  width: 300px;
-  height: 300px;
-  margin-left: 4px;
-}
 
-.project-btn {
-  padding: 10px 44px;
-  font-size: 14px;
-  border: 1px solid var(--secondary-color);
-  background-color: var(--secondary-color);
-  color: var(--tertiary-color);
-}
-
-.project-btn:hover {
-  color: var(--primary-color);
-  background: transparent;
-}
 
 
 
@@ -414,36 +361,27 @@ textarea {
   .containers {
     width: 700px;
     margin-top: 10px;
-    height: 110vh;
+    height: 100vh;
   }
 
   .main {
-    top: 20%;
+    top: 22%;
     margin-left: -30px;
   }
 
   .social-container {
-    top: 30%;
-    left: 27%;
+    top: 35%;
+    left: 39%;
   }
 
   .buttons {
     position: relative;
-    top: 35%;
-    left: 25%;
-  }
-
-  .nav-btn {
-    padding: 30px 15rem;
-    margin-left: -100px;
-  }
-
-  .row {
-    margin-bottom: 0px !important;
+    top: 38%;
+    padding: 50px;
   }
 
   footer {
-    top: 85%;
+    top: 75%;
     left: 33%;
   }
 
@@ -490,8 +428,8 @@ textarea {
   }
 
   .social-container {
-    top: 37%;
-    left: 4%;
+    top: 40%;
+    left: 28%;
   }
 
   .nav-btn {
@@ -501,8 +439,8 @@ textarea {
 
   .buttons {
     position: relative;
-    top: 42%;
-    left: 10%;
+    top: 40%;
+    left: 0%;
   }
 
   .nav-btns {
